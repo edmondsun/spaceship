@@ -1,0 +1,14 @@
+CREATE SCHEMA `company` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+
+USE company;
+
+CREATE TABLE IF NOT EXISTS `company`.`employee` (
+  `emp_id` INT NOT NULL AUTO_INCREMENT,
+  `emp_name` VARCHAR(200) NOT NULL,
+  `address` VARCHAR(250) NOT NULL,
+  `email` VARCHAR(200) NOT NULL,
+  `username` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NOT NULL,
+  `status` TINYINT NOT NULL DEFAULT '0',
+  PRIMARY KEY (`emp_id`));
+
